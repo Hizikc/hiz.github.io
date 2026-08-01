@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiz - developers</title>
+    <title>Hiz - lor</title>
     <style>
         /* Базовые стили страницы */
         body {
@@ -83,7 +83,7 @@
 
         /* Текст */
         .nickname {
-            font-size: 16px;
+            font-size: 80px;
             font-weight: 600;
             color: #ffffff;
             margin-bottom: 6px;
@@ -135,6 +135,12 @@
             font-size: 12px;
             color: #767693;
         }
+        .text-link {
+            color: inherit;            /* Цвет как у остального текста */
+            text-decoration: none;     /* Убирает линию снизу полностью */
+            cursor: default;           /* Стрелка вместо пальца, чтобы вообще беспалевно */
+        }
+
     </style>
 </head>
 <body>
@@ -142,46 +148,13 @@
     <!-- Задний фон со звездами (ID должен быть как на главной) -->
     <div id="particles-js"></div>
 
-    <!-- Секция с разработчиками -->
-    <div class="dev-container">
-
-        <!-- Разработчик 1 -->
-        <div class="dev-card">
-            <div class="avatar-box">
-                <!-- В тег src вставляй путь к фотке, например ava1.png или img/ava.jpg -->
-                <img src="./images/hiz.png" alt="hiz">
-            </div>
-            <div class="nickname">hiz</div>
-            <div class="role">Создатель</div>
-        </div>
-
-        <!-- Разработчик 2 -->
-        <div class="dev-card">
-            <div class="avatar-box">
-                <img src="./images/1mm0rtaL.png" alt="hiz">
-            </div>
-            <div class="nickname">1mm0rtaL</div>
-            <div class="role">Посудомойка</div>
-        </div>
-
-
+    <div class="nickname" >
+        <p><b>hiz - эт я</p>
+        <p>1mm0rtaL - эт он</p>
+        <p>Миша <a href="./index.html" class="text-link">эт</a> долбаеб</p>
     </div>
 
-    <!-- Кнопки -->
-    <div class="links-container">
-        <a href="./index.html" class="link-button">
-            <span class="title">Главная страница</span>
-            <span class="desc">Вернуться на сайт</span>
-        </a>
 
-        <a href="https://github.com" target="_blank" class="link-button">
-            <span class="title">Репозиторий проекта</span>
-            <span class="desc">Исходный код на GitHub</span>
-        </a>
-        <a href="./lor.html" class="link-button">
-            <span class="title">Лор разрабов</span>
-        </a>
-    </div>
 
     <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ ДЛЯ ЗВЕЗД -->
     <!-- Скопируй эти две строчки из самого низа своей главной страницы index.html -->
